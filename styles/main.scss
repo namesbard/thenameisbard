@@ -1,0 +1,12 @@
+body {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+@import 'buttons';
+@import 'header';
+@import 'content';
+@import 'footer';
+@import 'mq';

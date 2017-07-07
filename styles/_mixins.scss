@@ -1,0 +1,11 @@
+@mixin buttonStates($base-color) {
+     background: $base-color;
+
+     &:hover {
+         background: lighten($base-color, 5%);
+     }
+
+     &:active {
+         background: darken($base-color, 5%);
+     }
+}

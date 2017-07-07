@@ -1,0 +1,49 @@
+footer {
+    color: rgb(115, 125, 133);
+}
+.footer-heading {
+    text-transform: uppercase;
+}
+.bot-nav {
+    margin-top: 25px;
+
+    ul {
+        list-style-type: none;
+    }
+}
+.footer-navigation {
+    margin-bottom: 45px;
+
+    li {
+        margin-left: -40px;
+     }
+    li:before {
+        content:  "-";
+        position: relative;
+        left:     -5px;
+    }
+    a {
+        font-size: 12px;
+        font-family: "Helvetica";
+        color: rgb(130, 141, 147);
+        line-height: 1.333;
+        text-align: left;
+    }
+}
+.social {
+    margin-left: -30px;
+
+    li {
+        display: inline-block;
+     }
+}
+.disclaimer {
+    margin-bottom: 28px;
+    font-size: 12px;
+    font-family: "Helvetica";
+    color: rgb(130, 141, 147);
+    line-height: 1,333;
+    text-align: left;
+}
+    
+    

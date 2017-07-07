@@ -1,0 +1,43 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .nav-bar {
+        ul {
+            float: left;
+        }
+        li {
+            padding-left: 0px;
+        }
+        a {
+            font-size: 60%;
+        }
+    }
+    .labels img {
+        width: 100%;
+    }
+    .splash {
+        margin-bottom: 20px;
+        margin-top: -60px;
+    }
+    .iphones {
+        border-bottom: 1px solid rgb(52, 57, 66);
+    }
+    .introduction {
+        margin-left: -10px;
+        margin-right: -10px;
+        li, p {
+            font-size: 60%;
+        }
+}
+.testimonial {
+    text-align: center;
+}
+    .circle,
+    .service-icon {
+        margin-top: 50px;
+}
+    .services {
+        margin-top: -20px;
+}
+    .three-column {
+        margin-top: -50px;
+    }
+}

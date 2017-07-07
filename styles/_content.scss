@@ -1,0 +1,105 @@
+.content {
+    margin-bottom: 70px;
+    background: url(images/content_bg.png) no-repeat;
+    background-size: 100%;
+}
+.labels-wrapper {
+    background-color: rgb(77, 85, 99);
+    background-image: -moz-linear-gradient( 90deg, rgb(77,84,99) 0%, rgb(87,96,111) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(77,84,99) 0%, rgb(87,96,111) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(77,84,99) 0%, rgb(87,96,111) 100%);
+    border-top: 1px solid rgb(52, 57, 66);
+    border-bottom: 1px solid rgb(52, 57, 66);
+}
+.labels {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.col-half-offset{
+    margin-left: 4.166666667%;
+}
+.content {
+    padding-top: 45px;
+}
+.services {
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid rgb(215, 215, 215);;
+}
+.circle {
+    position: relative;
+    left: 80px;
+    bottom: 20px;
+}
+.service-icon {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+.center {
+    text-align: center;
+}
+.three-column {
+    margin-top: 70px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+.introduction {
+    margin-left: 40px;
+    margin-right: 40px;
+    background: url(images/putin.png) no-repeat;
+    background-position: right bottom;
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(215, 215, 215);
+}
+.introduction-heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 19px;
+    font-family: "Museo Regular";
+    color: rgb(51, 51, 51);
+    line-height: 0.737;
+    text-align: left;
+}
+.bold {
+    font-weight: bold;
+}
+.introduction-list {
+
+    ul {
+        list-style-image: url(images/check.png);
+        margin-left: -20px;
+    }
+    li {
+        padding-top: 10px;
+        font-size: 14px;
+        font-family: "Museo Regular";
+        color: rgb(51, 51, 51);
+        line-height: 1.357;
+        text-align: left;
+    }
+}
+.benefits {
+    margin-top: 30px;
+}
+.quote {
+    border-left: 1px solid rgb(215, 215, 215);
+}
+.testimonial {
+    font-size: 14px;
+    font-family: "Museo Light";
+    color: rgb(51, 51, 51);
+    line-height: 1.429;
+}
+.right {
+    text-align: right;
+}
+.projects img {
+    width: 100%;
+}
+.underline {
+    text-decoration: underline;
+}

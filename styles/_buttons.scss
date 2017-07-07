@@ -1,0 +1,49 @@
+$btn-font-family: "HelveticaNeue";
+$btn-color: rgb(255, 255, 255);
+$btn-x-padding: 15px;
+$btn-y-padding: 15px;
+
+.btn {
+    font-family: $btn-font-family;
+    color: $btn-color;
+    text-align: left;
+
+    &-focus {
+        outline: 0;
+    }
+
+    &-active {
+        background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+        box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.42);
+    }
+
+    &-green {
+        @include buttonStates($green-color);
+    }
+    &-blue {
+        @include buttonStates($blue-color);
+    }
+}
+.btn-green {
+    font-size: 15px;
+    line-height: 1.267;
+    border-radius: 10px;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.52);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, .2);
+    padding: 12px 32px 12px 32px;
+}
+.btn-blue {
+    margin-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 2.571;
+    border: 1px solid rgb(33, 108, 160);
+    border-radius: 30px;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, .2);
+}
