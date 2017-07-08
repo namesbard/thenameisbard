@@ -15,23 +15,13 @@ body {
 }
 
 @font-face {
-  font-family: "Museo Light";
+  font-family: "Museo Regular";
   src: url(fonts/Museo/Museo300.otf);
 }
 
 @font-face {
   font-family: "Museo Light";
   src: url(fonts/Museo/Museo100.otf);
-}
-
-@font-face {
-  font-family: "Museo Regular";
-  src: url(fonts/Museo/Museo300.otf);
-}
-
-@font-face {
-  font-family: "Museo Semi-Bold";
-  src: url(fonts/Museo/Museo500.otf);
 }
 
 @font-face {
@@ -159,9 +149,10 @@ body {
 .nav-bar a:hover {
   padding: 5px 15px;
   border-radius: 5px;
-  background-image: -moz-linear-gradient(90deg, #484f5a 0%, #3c414a 100%);
-  background-image: -webkit-linear-gradient(90deg, #484f5a 0%, #3c414a 100%);
-  background-image: -ms-linear-gradient(90deg, #484f5a 0%, #3c414a 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#484f5a), to(#3c414a));
+  background-image: -webkit-linear-gradient(left, #484f5a 0%, #3c414a 100%);
+  background-image: -o-linear-gradient(left, #484f5a 0%, #3c414a 100%);
+  background-image: linear-gradient(90deg, #484f5a 0%, #3c414a 100%);
   -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.15), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.15), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
 }
@@ -169,11 +160,18 @@ body {
 .active {
   padding: 5px 15px;
   border-radius: 5px;
-  background-image: -moz-linear-gradient(90deg, #484f5a 0%, #3c414a 100%);
-  background-image: -webkit-linear-gradient(90deg, #484f5a 0%, #3c414a 100%);
-  background-image: -ms-linear-gradient(90deg, #484f5a 0%, #3c414a 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#484f5a), to(#3c414a));
+  background-image: -webkit-linear-gradient(left, #484f5a 0%, #3c414a 100%);
+  background-image: -o-linear-gradient(left, #484f5a 0%, #3c414a 100%);
+  background-image: linear-gradient(90deg, #484f5a 0%, #3c414a 100%);
   -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.15), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.15), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  margin-bottom: 70px;
+  background: url(images/content_bg.png) no-repeat;
+  background-size: 100%;
 }
 
 .splash {
@@ -186,8 +184,11 @@ body {
 
 .iphone-one {
   -webkit-box-shadow: 50px 0px 40px -31px rgba(124, 129, 138, 0.4);
-  -moz-box-shadow: 50px 0px 40px -31px rgba(124, 129, 138, 0.4);
   box-shadow: 50px 0px 40px -31px rgba(124, 129, 138, 0.4);
+}
+
+.iphone-two {
+  margin-top: 2px;
 }
 
 .proposition h1 {
@@ -199,24 +200,22 @@ body {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
-.text-one {
-  margin-bottom: 10px;
+.texts {
   font-size: 16px;
   font-family: "Museo Regular";
-  color: #c6c6c6;
   line-height: 1,4;
   text-align: left;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
+.text-one {
+  margin-bottom: 10px;
+  color: #c6c6c6;
+}
+
 .text-two {
   margin-bottom: 20px;
-  font-size: 16px;
-  font-family: "Museo Regular";
   color: #999999;
-  line-height: 1,4;
-  text-align: left;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 .proposal {
@@ -237,17 +236,12 @@ body {
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
-.content {
-  margin-bottom: 70px;
-  background: url(images/content_bg.png) no-repeat;
-  background-size: 100%;
-}
-
 .labels-wrapper {
   background-color: #4d5563;
-  background-image: -moz-linear-gradient(90deg, #4d5463 0%, #57606f 100%);
-  background-image: -webkit-linear-gradient(90deg, #4d5463 0%, #57606f 100%);
-  background-image: -ms-linear-gradient(90deg, #4d5463 0%, #57606f 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4d5463), to(#57606f));
+  background-image: -webkit-linear-gradient(left, #4d5463 0%, #57606f 100%);
+  background-image: -o-linear-gradient(left, #4d5463 0%, #57606f 100%);
+  background-image: linear-gradient(90deg, #4d5463 0%, #57606f 100%);
   border-top: 1px solid #343942;
   border-bottom: 1px solid #343942;
 }
@@ -398,12 +392,41 @@ footer {
   text-align: left;
 }
 
-.social {
-  margin-left: -30px;
+.sprite {
+  margin-left: -11px;
+  background-image: url(images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
-.social li {
-  display: inline-block;
+.sprite-1 {
+  width: 34px;
+  height: 34px;
+  background-position: -5px -5px;
+}
+
+.sprite-2 {
+  width: 34px;
+  height: 34px;
+  background-position: -49px -5px;
+}
+
+.sprite-3 {
+  width: 34px;
+  height: 34px;
+  background-position: -93px -5px;
+}
+
+.sprite-4 {
+  width: 34px;
+  height: 34px;
+  background-position: -137px -5px;
+}
+
+.sprite-5 {
+  width: 34px;
+  height: 34px;
+  background-position: -181px -5px;
 }
 
 .disclaimer {
